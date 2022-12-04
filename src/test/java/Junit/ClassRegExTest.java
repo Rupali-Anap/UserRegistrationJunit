@@ -13,5 +13,13 @@ public class ClassRegExTest {
             Assertions Assert = null;
             Assert.assertEquals(result, true);
         }
+    @Test
+    public void lastnameTest() {
+        ClassRefEx ur = new ClassRefEx();
+        boolean result = ur.firstname("Anap");
+        Assertions Assert = null;
+        Assert.assertEquals(result, true);
     }
+
+}
 
