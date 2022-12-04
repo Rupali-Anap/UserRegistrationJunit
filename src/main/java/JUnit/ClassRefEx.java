@@ -19,10 +19,20 @@ import java.util.regex.Pattern;
             System.out.println("The given last name is : " +lastname + "->" + ma.matches());
             return ma.matches();
         }
-
-
+        public static boolean email(String email) {
+            String regex = "[a-z]{3}(.+)[a-z]{3}@[bl](.+)[co](.+)";
+            Pattern pattern = Pattern.compile(regex);
+            Matcher ma = pattern.matcher(email);
+            System.out.println("The given email is : " +email + "->" + ma.matches());
+            return ma.matches();
+        }
 
     }
+
+
+
+
+
 
 
 
