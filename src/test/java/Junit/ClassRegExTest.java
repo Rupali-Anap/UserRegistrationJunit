@@ -20,6 +20,12 @@ public class ClassRegExTest {
         Assertions Assert = null;
         Assert.assertEquals(result, true);
     }
+    public void email() {
+        ClassRefEx ur = new ClassRefEx();
+        boolean result = ur.email("rupali@bl.co.in");
+        Assertions Assert = null;
+        Assert.assertEquals(result, true);
+    }
 
 }
 
