@@ -33,6 +33,13 @@ public class ClassRegExTest {
         Assertions Assert = null;
         Assert.assertEquals(result, true);
     }
+    @Test
+    public void password() {
+        ClassRefEx ur = new ClassRefEx();
+        boolean result = ur.password("rupalie");
+        Assertions Assert = null;
+        Assert.assertEquals(result, true);
+    }
 
 }
 
