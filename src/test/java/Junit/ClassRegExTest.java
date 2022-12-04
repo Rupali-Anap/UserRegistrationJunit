@@ -26,6 +26,13 @@ public class ClassRegExTest {
         Assertions Assert = null;
         Assert.assertEquals(result, true);
     }
+    @Test
+    public void mobile() {
+        ClassRefEx ur = new ClassRefEx();
+        boolean result = ur.mobile("9170409631");
+        Assertions Assert = null;
+        Assert.assertEquals(result, true);
+    }
 
 }
 
