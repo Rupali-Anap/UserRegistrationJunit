@@ -38,12 +38,13 @@ import java.util.regex.Pattern;
 
         }
         public static boolean password(String password) {
-            String regex = "^[a-z]{8}";
+            String regex = "^[A-za-z]{8}";
             Pattern pattern = Pattern.compile(regex);
             Matcher ma = pattern.matcher(password);
             System.out.println("The given password is : " +password + "->" + ma.matches());
             return ma.matches();
         }
+
     }
 
 
